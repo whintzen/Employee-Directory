@@ -14,7 +14,8 @@ th {
     font-size: 17px;
     letter-spacing: 1px;
     font-family: 'Inria Serif', serif;
-    color: silver;
+    /* color: silver; */
+    color: rgb(134, 131, 131);
     cursor: pointer;
     
 }
@@ -23,7 +24,9 @@ th {
 header {
     padding: 15px;
     margin-top: 20px;
-    background-color: rgb(245, 245, 245);
+    margin-bottom: 30px;
+    border-style: outset;
+    background-color: rgba(241, 168, 229, 0.349);
 }
 .email {
     color:rgb(28, 28, 235);
@@ -33,24 +36,25 @@ header {
     
 }
 .inputAndButton{
-    margin-top:40px
+    margin-top:40px;
+    
 }
 
 
-.searchBttn{
+/* .searchBttn{
     margin-top:40px;
+    margin-bottom: 40px;
     border-radius: 20px;;
     letter-spacing: 1px !important;;
     font-size:10px ;
-    background-color: #2b4162;
-    background-image: linear-gradient(315deg, #2b4162 0%, #12100e 74%);
-    
+    /* background-color: #2b4162; */
+    /* background-color: #e4eaf1; */
+    /* background-image: linear-gradient(315deg, #2b4162 0%, #12100e 74%); */
+    /* background-image: linear-gradient(315deg, #2b4162 0%, #c9bcaf 74%);
+    font-weight: bolder;   
+   
+} */
 
-    font-weight: bolder;
-    
-   
-   
-}
 /* header {
     padding: 10px;     
     background-color: #cfd6e6
@@ -67,11 +71,11 @@ img {
 
  .headerText {
     letter-spacing: 1px;
-    font-size: 60px;
+    font-size: 50px;
     font-family: 'Inria Serif', serif;
     font-weight: lighter;
-    text-shadow: rgb(102, 102, 102) 1px 1px 1px;   
-    color: black
+    text-shadow: rgba(231, 157, 203, 0.514) 1px 1px 1px;   
+    color: rgb(44, 43, 43)
  }
 
  input:focus, input.form-control:focus {
