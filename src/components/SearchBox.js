@@ -29,21 +29,6 @@ function SearchBox(props) {
 
 
                         </div>
-                        {/* <div className="col m4">
-
-
-                            <button
-                                type="submit"
-                                value=""
-                                className=" btn z-depth-2 waves-effect  searchBttn"
-                                onClick={props.handleSearch} >Search</button>
-                        </div> */}
-
-
-
-
-
-
                     </div>                    
                 </div>
             </header>

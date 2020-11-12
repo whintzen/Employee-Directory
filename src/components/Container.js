@@ -1,3 +1,4 @@
+// This is the bulk of the coding for the application
 import API from "../utils/API";
 import React, { Component } from "react"
 import SearchBox from "./SearchBox"
@@ -29,22 +30,22 @@ class Container extends Component {
     //if "name" is clicked employee are shown by asc/desc order
 
     sortByName = () => {
-        const filtereds = this.state.filteredEmployees;
+        const filtered = this.state.filteredEmployees;
         if (this.state.order === "asc") {
-            const sorteds = filtereds.sort((a, b) => (a.name.first > b.name.first) ? 1 : -1)
-            console.log(sorteds)
+            const sorted = filtered.sort((a, b) => (a.name.first > b.name.first) ? 1 : -1)
+            console.log(sorted)
 
             this.setState({
-                filteredEmployees: sorteds,
+                filteredEmployees: sorted,
                 order: "desc"
             })
         } else {
 
-            const sorteds = filtereds.sort((a, b) => (a.name.first > b.name.first) ? -1 : 1)
-            console.log(sorteds)
+            const sorted = filtered.sort((a, b) => (a.name.first > b.name.first) ? -1 : 1)
+            console.log(sorted)
 
             this.setState({
-                filteredEmployees: sorteds,
+                filteredEmployees: sorted,
                 order: "asc"
             })
 
@@ -64,8 +65,6 @@ class Container extends Component {
             filteredEmployees,
 
         });
-
-
     };
 
 
@@ -83,32 +82,13 @@ class Container extends Component {
             .catch(err => console.log(err))
     }
 
-    //when button search it's clicked
-    // handleSearch = event => {
-    //     event.preventDefault();
-    //     if (!this.state.search) {
-    //         alert("Enter a name")
-    //     }
-    //     const { employees, search } = this.state;
-
-        //filters the object looking for the value that matches the value entered in the input box by the user  (search.this.state)
-    //     const filteredEmployees = employees.filter(employee => employee.name.first.toLowerCase().includes(search.toLowerCase()));
-
-    //     this.setState({
-    //         filteredEmployees
-    //     });
-    // }
-
-
-
-    render() {
+     render() {
 
         return (
             <div>
 
                 <SearchBox
-                    employee={this.state.employees}
-                    handleSearch={this.handleSearch}
+                    employee={this.state.employees}                    
                     handleInputChange={this.handleInputChange} />
                 <TableData results={this.state.filteredEmployees}
                     sortByName={this.sortByName}

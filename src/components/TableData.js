@@ -1,5 +1,6 @@
 // this file contains the information for pulling the employee 
-// information from the Utils API and how it will display on the page.                                                                                                                                                                                                                                                                        
+// information from the Utils API and how it will display on the page.
+// Only the Name of the employee will be sorted                                                                                                                                                                                                                                                                        
 import React from "react";
 import Moment from 'react-moment';
 import "./style.css";
