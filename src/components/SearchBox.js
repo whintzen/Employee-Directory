@@ -11,8 +11,7 @@ function SearchBox(props) {
                 <div className="row">              
                     <div className="col s6">                        
                         <h3 className="right-align headerText">Associates Directory</h3>
-                        {/* <h6 className="center-align smallerHeaderText">Use the box down below to narrow your search</h6> */}
-
+                        
                     </div>
                     <div className="col s6 ">
 
@@ -30,7 +29,7 @@ function SearchBox(props) {
 
 
                         </div>
-                        <div className="col m4">
+                        {/* <div className="col m4">
 
 
                             <button
@@ -38,7 +37,7 @@ function SearchBox(props) {
                                 value=""
                                 className=" btn z-depth-2 waves-effect  searchBttn"
                                 onClick={props.handleSearch} >Search</button>
-                        </div>
+                        </div> */}
 
 
 

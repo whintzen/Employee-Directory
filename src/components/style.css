@@ -2,12 +2,12 @@ body {
    
  
     background-color: ghostwhite
-    /* background-color: gold */
-   
+     
 }
- table{
+
+table{
      margin-top: 15px;
- }
+}
 
 th {
     
@@ -65,20 +65,18 @@ header {
 img {
     border-radius: 50%;  
     box-shadow: black 1px 1px 8px;  
- }
+}
 
-
-
- .headerText {
+.headerText {
     letter-spacing: 1px;
     font-size: 50px;
     font-family: 'Inria Serif', serif;
     font-weight: lighter;
     text-shadow: rgba(231, 157, 203, 0.514) 1px 1px 1px;   
     color: rgb(44, 43, 43)
- }
+}
 
- input:focus, input.form-control:focus {
+input:focus, input.form-control:focus {
 
     outline:none !important;
     outline-width: 0 !important;
@@ -95,15 +93,11 @@ color: gray !important;
  .smallerHeaderText{
    color: white;
    font-family: 'Catamaran', sans-serif;
-    letter-spacing: 0.5px;
-    line-height: 0px;
-   
-font-weight: lighter;
-  
-    
-    
-    margin-top: 0;
- }
+   letter-spacing: 0.5px;
+   line-height: 0px;   
+   font-weight: lighter;    
+   margin-top: 0;
+}
 
 
  .tableEmployee{
