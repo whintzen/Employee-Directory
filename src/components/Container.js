@@ -84,20 +84,20 @@ class Container extends Component {
     }
 
     //when button search it's clicked
-    handleSearch = event => {
-        event.preventDefault();
-        if (!this.state.search) {
-            alert("Enter a name")
-        }
-        const { employees, search } = this.state;
+    // handleSearch = event => {
+    //     event.preventDefault();
+    //     if (!this.state.search) {
+    //         alert("Enter a name")
+    //     }
+    //     const { employees, search } = this.state;
 
         //filters the object looking for the value that matches the value entered in the input box by the user  (search.this.state)
-        const filteredEmployees = employees.filter(employee => employee.name.first.toLowerCase().includes(search.toLowerCase()));
+    //     const filteredEmployees = employees.filter(employee => employee.name.first.toLowerCase().includes(search.toLowerCase()));
 
-        this.setState({
-            filteredEmployees
-        });
-    }
+    //     this.setState({
+    //         filteredEmployees
+    //     });
+    // }
 
 
 
