@@ -1,3 +1,5 @@
+// this file contains the information for pulling the employee 
+// information from the Utils API and how it will display on the page.                                                                                                                                                                                                                                                                        
 import React from "react";
 import Moment from 'react-moment';
 import "./style.css";
@@ -9,7 +11,7 @@ function TableData(props) {
                 <tr>
                     <th></th>
                     <th onClick={props.sortByName}>Name</th>
-                    <th onClick={props.sortByPhone}>Phone</th>
+                    <th>Phone</th>
                     <th>E-mail</th>
                     <th>DOB</th>
                 </tr>

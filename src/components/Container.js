@@ -2,14 +2,14 @@ import API from "../utils/API";
 import React, { Component } from "react"
 import SearchBox from "./SearchBox"
 import TableData from "./TableData"
-// import "./style.css";
+import "./style.css";
 
 class Container extends Component {
 
     // Setting the component's initial state
     //search starts as an empty string
-    //employess and filteredEmployess are empty arrays because that it's the structure of the data we'll be working with
-    //order it's to reference the order that the employees are. By defaltu they come randonly and the first click will trigger then to be in asc order
+    //employees and filteredEmployees are empty arrays because that is the structure of the data we'll be working with
+    //order is to reference the order that the employees are. By default they come randomly and the first click will trigger then to be in asc order
     state = {
         search: "",
         employees: [],
@@ -26,7 +26,7 @@ class Container extends Component {
         })).catch(err => console.log(err))
     }
 
-    //if "name" it's clicked employee are shown by asc/desc order
+    //if "name" is clicked employee are shown by asc/desc order
 
     sortByName = () => {
         const filtereds = this.state.filteredEmployees;
@@ -58,7 +58,7 @@ class Container extends Component {
         const filteredEmployees = employees.filter(employee => employee.name.first.toLowerCase().indexOf(UserInput.toLowerCase()) > -1
         )
         this.setState({
-            //change the state of  filteredEmployes now it holds all the employes that matches users
+            //change the state of filteredEmployees now it holds all the employees that matches users
             // search and will be passed down in this state
 
             filteredEmployees,
@@ -74,8 +74,9 @@ class Container extends Component {
         API.getUsers()
             .then(res => this.setState({
 
-                //change their both states to hold all the data from the API call(all employess) and will be passed down trough props like that
-                //employee will remain the same and filteredEmployes will be changed and passed down during application's life. Employee will always hold all employess.
+                // change both states to hold all the data from the API call(all employess) and will be passed down trough props like that
+                // employee will remain the same and filteredEmployees will be changed and passed down during application's life.
+                // Employee will always hold all employess.
                 filteredEmployees: res.data.results,
                 employees: res.data.results
             }))
