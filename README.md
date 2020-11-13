@@ -25,8 +25,8 @@ An employee or manager would benefit greatly from being able to view non-sensiti
   * Run `npm start`, this connect you to the PORT 3000 and also open the Employee Application in the browser.
 
   ## How the App Works
-  * Once the App opens, it will display a list of employees and above this list is a Search box.   You can start typing the first name of the employee you would like to see information on and as you type the any employee with letters similar will first appear until the first name is spelt out.  You may not necessarily have to spell out the full name.
-  * You can also sort the file by clicking on the first Name label.  This will sort the file in ascending or decencending order.  Please not that each time you refresh the page you will get a different list of employees.    
+  * Once the App opens, it will display a list of employees and above this list is a Search box.   You can start typing the first name of the employee you would like to see information on, and as you type employees with similiar letters in their name will first appear, until the employees first name is spelt out.  Please note that you can get more than one employee with the same first name.  You may not have to spell out the full name in order to find the employee.
+  * You can also sort the file by clicking on the first Name label.  This will sort the file in ascending or decencending order.  Please note that each time you refresh the page you will get a different list of employees.    
 
 
 ## Tools:
@@ -41,13 +41,13 @@ An employee or manager would benefit greatly from being able to view non-sensiti
 
 ## Links:
   * Github Repository:
-    [Github](https://github.com/whintzen/Online-Offline-Budget-Trackers)
+    [Github](https://github.com/whintzen/Employee-Directory)
 
-  * Heroku Repository: 
-    [Heroku](https://secret-wildwood-01899.herokuapp.com)
+  * Deployed Application: 
+    [Github gh-Pages ](https://whintzen.github.io/Employee-Directory)
   
   * Employee Directory Images
-     ![Employee Directory](https://github.com/whintzen/Online-Offline-Budget-Trackers/blob/master/public/icons/Setting-Budget.jpg)
+     ![Employee Directory](https://github.com/whintzen/Employee-Directory/blob/master/public/Screenshot.jpg)
 
      
   
