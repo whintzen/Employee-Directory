@@ -1,70 +1,54 @@
-# Getting Started with Create React App
+# :office_worker: Unit 19 React Employee Directory  :woman_office_worker:
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Concept
+Employee Directory is an application that is built using React.  When the application is rendered, it displays a list of employees by Name, Phone, Email and DOB (Date of BirthDOB).  This application can be sorted in ascending or descending order by clicking on Name.  The user can also search for an employee in the search box by typing the name.
 
-## Available Scripts
+## Business Context
+An employee or manager would benefit greatly from being able to view non-sensitive data about other employees. It would be particularly helpful to be able to filter employees by name.
 
-In the project directory, you can run:
+## User Story
+```
+  As a user, I want to be able to view my entire employee directory at once so that I have quick access to their information.
+```
+## Acceptance Criteria
+```md
+  Given a table of random users, when the user loads the page, a table of employees should render. 
 
-### `npm start`
+  The user should be able to:
+  * Sort the table by at least one category
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+  * Filter the users by at least one property.
+```
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Instructions
+  * Open a terminal and run these commands to set up the environment files `npm install`, `npm run Axios`, `npm install react-router-dom`, `npm install bootstrap` and `npm i moment react-moment -save` to create the node_modules folder and to add additional information.  
+  * Run `npm start`, this connect you to the PORT 3000 and also open the Employee Application in the browser.
 
-### `npm test`
+  ## How the App Works
+  * Once the App opens, it will display a list of employees and above this list is a Search box.   You can start typing the first name of the employee you would like to see information on and as you type the any employee with letters similar will first appear until the first name is spelt out.  You may not necessarily have to spell out the full name.
+  * You can also sort the file by clicking on the first Name label.  This will sort the file in ascending or decencending order.  Please not that each time you refresh the page you will get a different list of employees.    
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+## Tools:
+ * React
+ * React-Dom
+ * Axios 
+ * Javascript        
+ * Package json 
+ * CSS
+ * HTML
+ 
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Links:
+  * Github Repository:
+    [Github](https://github.com/whintzen/Online-Offline-Budget-Trackers)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+  * Heroku Repository: 
+    [Heroku](https://secret-wildwood-01899.herokuapp.com)
+  
+  * Employee Directory Images
+     ![Employee Directory](https://github.com/whintzen/Online-Offline-Budget-Trackers/blob/master/public/icons/Setting-Budget.jpg)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+     
+  
+  
